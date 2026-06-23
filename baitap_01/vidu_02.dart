@@ -5,20 +5,11 @@
  */
 
 void main() {
-  //Tự suy luận kiểu
-  var ten = "Thịnh"; //String
-  var tuoi = 20; //int
+  // String ten;
+  // ten = null;
 
-  //Khai báo với kiểu dữ liệu cụ thể
-  String name = "Nguyen Van A";
-  int age = 20;
-
-  //Khai báo bằng kiểu object
-  Object obj = "Nguyen Van A";
-  print(obj);
-
-  print("Ten: $name");
-  print("Tuoi: $age");
-  print("Ten: $ten");
-  print("Tuoi: $tuoi");
+  String? ten;
+  ten = null;
+  ten = 'Nguyen Van A';
+  print(ten);
 }
