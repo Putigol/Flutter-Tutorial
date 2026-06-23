@@ -16,4 +16,9 @@ void main() {
   //Khai báo bằng kiểu object
   Object obj = "Nguyen Van A";
   print(obj);
+
+  print("Ten: $name");
+  print("Tuoi: $age");
+  print("Ten: $ten");
+  print("Tuoi: $tuoi");
 }
