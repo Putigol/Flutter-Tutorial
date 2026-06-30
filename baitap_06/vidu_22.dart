@@ -42,15 +42,13 @@ Future<String> taiDuLieu() {
 }
 
 //Gọi hàm chính 1
-void hamChinh1() {
-  print("Bắt đầu tải");
-  Future<String> firstFuture = taiDuLieu();
-  firstFuture.then((ketQua) {
-    print("Tải dữ liệu hoàn tất: $ketQua");
-  });
-  print('Tiếp tục công việc khác');
+void hamChinh2() async {
+  print("Bắt đầu tải"); //1
+  String ketQua = await taiDuLieu(); //2
+  print("Tải dữ liệu hoàn tất: $ketQua");
+  print('Tiếp tục công việc khác'); //3
 }
 
 void main() {
-  hamChinh1();
+  hamChinh2();
 }
